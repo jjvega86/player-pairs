@@ -73,6 +73,7 @@ def determine_winner_or_ties(pairs_result):
         for key in pairs_result:
             if pairs_result[key]["pairs"] == highest_pair_count:
                 current_winner = f"{key} wins!"
+                break
     elif all_zeroes:
         current_winner = "No pairs this round!"
     else:
